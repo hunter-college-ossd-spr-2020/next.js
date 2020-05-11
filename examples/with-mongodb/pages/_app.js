@@ -10,8 +10,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Pet Care App</title>
       </Head>
-
-      <div className="top-bar">
+      
+      <div className="top-bar">      
         <div className="nav">
           <Link href="/">
             <a>Home</a>
@@ -20,7 +20,8 @@ function MyApp({ Component, pageProps }) {
             <a>Add Pet</a>
           </Link>
         </div>
-        <h1 id="title">Pets</h1>
+         
+        <h1 id="title"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Pet_logo_with_flowers.png" alt="pet care logo" width="100" height="100"></img>Pets</h1>        
       </div>
 
       <div className="grid wrapper">
