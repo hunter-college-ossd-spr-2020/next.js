@@ -24,9 +24,9 @@ yarn create next-app --example with-mongodb with-mongodb-app
 
 Please see the [steps](./link-steps.md) on how to connect MongoDB to your application
 
-### Step 2. Creating your own Schema
+### Step 2. Set up schema models for the application
 
-Based on the types of data you need for your application, you need to modified the [Schema](./models/Pet) as well as the [seed data file](./seed/Pet-sampleSeed)
+Based on the types of data needed for your application, you will modify the type definitions in [Pet.js](./models/Pet) as well as the seed data in [Pet-sampleSeed.json](./seed/Pet-sampleSeed)
 
 ### Step 3. Import sample seed data to your MongoDB
 
