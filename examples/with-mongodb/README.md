@@ -2,10 +2,11 @@
 
 This example shows how to create an application using Next.js and MongoDB.
 
-## Demo
+## Demo 
 
-//we will put the link here after we deploy it
+**Pets**: we will put the link here after we deploy it
 
+Pets is an application that allows users to add their pets' information (e.g., name, owner's name, diet, age, dislikes, likes, and photo). They can also delete it or edit it anytime.
 
 ## How to use
 
@@ -23,7 +24,11 @@ yarn create next-app --example with-mongodb with-mongodb-app
 
 Please see the [steps](./link-steps.md) on how to connect MongoDB to your application
 
-### Step 2. Import sample seed data to your MongoDB
+### Step 2. Creating your own Schema
+
+Based on the types of data you need for your application, you need to modified the [Schema](./models/Pet) as well as the [seed data file](./seed/Pet-sampleSeed)
+
+### Step 3. Import sample seed data to your MongoDB
 
 Please see the [steps](./data_import.md) on importing sample seed data into your MongoDB
 
