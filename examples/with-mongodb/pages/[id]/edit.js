@@ -17,7 +17,7 @@ const EditPet = ({ pet }) => {
 }
 
 EditPet.getInitialProps = async ({ query: { id } }) => {
-  const res = await fetch(`http://localhost:3000/api/pets/${id}`)
+  const res = await fetch(`${process.env.API_URI}/api/pets/${id}`)
   const { data } = await res.json()
 
   return { pet: data }
