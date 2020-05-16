@@ -41,6 +41,8 @@ npm run dev
 yarn
 yarn dev
 ```
-
+### Deploy
 Deploy it to the cloud with [ZEIT Now](https://zeit.co/import?filter=next.js&utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+Set the production URL given by ZEIT Now as the ROOT_URL in the next.config.js file. The add, delete, and edit functionality will only work in the production link.
 © 2020 GitHub, Inc.
