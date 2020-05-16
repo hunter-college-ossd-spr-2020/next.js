@@ -22,7 +22,7 @@ yarn create next-app --example with-mongodb with-mongodb-app
 
 ### Step 1. Connect MongoDB to the application
 
-Please see the [steps](./link-steps.md) on how to connect MongoDB to your application
+Please see the [steps](./link-step.md) on how to connect MongoDB to your application
 
 ### Step 2. Set up schema models for the application
 
