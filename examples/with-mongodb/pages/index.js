@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import fetch from 'isomorphic-unfetch' //alternative dbconnect into getStaticProps??
+import fetch from 'isomorphic-unfetch'
 
 const Index = ({ pets }) => {
   return (
@@ -50,7 +50,7 @@ const Index = ({ pets }) => {
 
 /* Retrieves pet(s) data from mongodb database */
 Index.getInitialProps = async () => {
-  const res = await fetch(process.env.API_URI +'/api/pets')
+  const res = await fetch(process.env.ROOT_URL +'/api/pets')
   const { data } = await res.json()
 
   return { pets: data }
