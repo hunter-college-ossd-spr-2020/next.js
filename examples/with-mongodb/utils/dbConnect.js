@@ -1,9 +1,10 @@
 /* This is a database connection function*/
 import mongoose from 'mongoose'
 
-const connection = {} /* creating connection object*/ 
+const connection = {} /* creating connection object*/
 
-async function dbConnect() { /* check if we have connection to our databse*/
+async function dbConnect() {
+  /* check if we have connection to our databse*/
   if (connection.isConnected) {
     return
   }
@@ -13,7 +14,7 @@ async function dbConnect() { /* check if we have connection to our databse*/
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-  });
+  })
 
   connection.isConnected = db.connections[0].readyState
   console.log(connection.isConnected)
