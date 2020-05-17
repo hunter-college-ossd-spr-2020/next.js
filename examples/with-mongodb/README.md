@@ -1,12 +1,12 @@
-# Pets application using MongoDB and Next.js 
+# MongoDB and Next.js Example 
 
-This example shows how to create an application using Next.js and MongoDB.
+This example shows how you can use MongoDB as database to support your Next.js application
 
 ## Demo 
 
 ### Pets: https://with-mongodb-navy.now.sh/
 
-Pets is an application that allows users to add their pets' information (e.g., name, owner's name, diet, age, dislikes, likes, and photo). They can also delete it or edit it anytime.
+**Pets** - an application that allows users to add their pets' information (e.g., name, owner's name, diet, age, dislikes, likes, and photo). They can also delete it or edit it anytime.
 
 ## How to use
 
@@ -20,19 +20,21 @@ npm init next-app --example with-mongodb with-mongodb-app
 yarn create next-app --example with-mongodb with-mongodb-app
 ```
 
-### Step 1. Connect MongoDB to the application
+### Configuration
+
+#### Step 1. Connect MongoDB to the application
 
 Please see the [steps](./link-step.md) on how to connect MongoDB to your application
 
-### Step 2. Set up schema models for the application
+#### Step 2. Set up schema models for the application
 
-Based on the types of data needed for your application, you will modify the type definitions in [Pet.js](./models/Pet) as well as the seed data in [Pet-sampleSeed.json](./seed/Pet-sampleSeed.json)
+Based on the types of data needed for your application, you will modify the type definitions in [Pet.js](./models/Pet.js) as well as the seed data in [Pet-sampleSeed.json](./seed/Pet-sampleSeed.json)
 
-### Step 3. Import sample seed data to your MongoDB
+#### Step 3. Import sample seed data to your MongoDB
 
 Please see the [steps](./data_import.md) on importing sample seed data into your MongoDB
 
-### Step 4. Change ROOT_URL
+#### Step 4. Change ROOT_URL
 
 Set ROOT_URL in [next.config.js](./next.config.js) to ```http://localhost:3000```
 
