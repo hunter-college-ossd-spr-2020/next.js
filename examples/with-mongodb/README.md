@@ -1,8 +1,8 @@
-# MongoDB and Next.js Example 
+# MongoDB and Next.js Example
 
 This example shows how you can use MongoDB as database to support your Next.js application
 
-## Demo 
+## Demo
 
 ### Pets: https://with-mongodb-navy.now.sh/
 
@@ -36,7 +36,7 @@ Please see the [steps](./data_import.md) on importing sample seed data into your
 
 #### Step 4. Change ROOT_URL
 
-Set ROOT_URL in [next.config.js](./next.config.js) to ```http://localhost:3000```
+Set ROOT_URL in [next.config.js](./next.config.js) to `http://localhost:3000`
 
 ### Install it and run:
 
@@ -47,6 +47,7 @@ npm run dev
 yarn
 yarn dev
 ```
+
 ### Deploy
 
 Set the production URL given by ZEIT Now as the ROOT_URL in the next.config.js file. The add, delete, and edit functionality will only work in the production link.

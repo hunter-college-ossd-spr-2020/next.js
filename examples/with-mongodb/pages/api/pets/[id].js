@@ -10,7 +10,7 @@ export default async (req, res) => {
   } = req
 
   switch (method) {
-    case 'GET': /* Get a model by its ID */
+    case 'GET' /* Get a model by its ID */:
       try {
         const pet = await Pet.findById(id)
         if (!pet) {
@@ -22,7 +22,7 @@ export default async (req, res) => {
       }
       break
 
-    case 'PUT': /* Edit a model by its ID */
+    case 'PUT' /* Edit a model by its ID */:
       try {
         const pet = await Pet.findByIdAndUpdate(id, req.body, {
           new: true,
@@ -37,7 +37,7 @@ export default async (req, res) => {
       }
       break
 
-    case 'DELETE': /* Delete a model by its ID */
+    case 'DELETE' /* Delete a model by its ID */:
       try {
         const deletedPet = await Pet.deleteOne({ _id: id })
         if (!deletedPet) {
@@ -48,7 +48,7 @@ export default async (req, res) => {
         res.status(400).json({ success: false })
       }
       break
-      
+
     default:
       res.status(400).json({ success: false })
       break
