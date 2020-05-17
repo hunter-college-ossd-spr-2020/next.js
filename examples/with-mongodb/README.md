@@ -26,7 +26,7 @@ Please see the [steps](./link-step.md) on how to connect MongoDB to your applica
 
 ### Step 2. Set up schema models for the application
 
-Based on the types of data needed for your application, you will modify the type definitions in [Pet.js](./models/Pet) as well as the seed data in [Pet-sampleSeed.json](./seed/Pet-sampleSeed)
+Based on the types of data needed for your application, you will modify the type definitions in [Pet.js](./models/Pet) as well as the seed data in [Pet-sampleSeed.json](./seed/Pet-sampleSeed.json)
 
 ### Step 3. Import sample seed data to your MongoDB
 
